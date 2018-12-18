@@ -7,6 +7,8 @@ For updates and history of development please see [this page](https://github.com
 
 ## Installation:
 
+__Audiorecorder2 Note:__ Audiorecorder2 can now be installed along side audiorecorder by adding the flag `--with-audiorecorder2` to the following homebrew install commands.
+
 audiorecorder can be installed via [homebrew](https://brew.sh/) on macOS and [linuxbrew](http://linuxbrew.sh/) on Linux.
 
 __MacOS Installation__:
@@ -34,7 +36,7 @@ __linuxbrew commands__
 
 If FFmpeg has already been installed with these options then skip next step. 
 
-`brew install ffmpeg --with-freetype --with-sdl2`
+`brew install ffmpeg --with-freetype`
 
 sdl2 is necessary to build FFmpeg with FFplay, but removing it after build will avoid conflicts between other installations of sdl2.
 
@@ -76,8 +78,14 @@ Once recording is complete, audiorecorder will process the file, and then an int
 Press 'Preview' to hear the file you recorded. To trim file, enter the amount (in seconds) to trim from the start and end of the file and press 'Trim'. If 'Start Trim' is left blank, auto-trim will be applied to start of file. If no trim at start is desired enter '0'. After trimming, a preview window will open for your new file. Trim can be run as many times as is necessary. Once you are done, press 'Finish' to finalize and quit. It is at this point that BEXT metadata will be embedded if that option has been selected.
 
 ## Huge thanks to all contributors to audiorecorder!
+
+#### Project Maintainers are:
+Andrew Weaver (@privatezero)
+
+Ashley Blewer (@ablwr)
+
 #### Contributors to date:
-privatezero (Andrew Weaver), retokromer (Reto Kromer), dericed (Dave Rice)
+privatezero (Andrew Weaver), retokromer (Reto Kromer), dericed (Dave Rice), todrobbins (Tod Robbins), ablwr (Ashley Blewer)
 
 Special thanks to Matt Boyd at the University of Washington for extensive testing assistance!
 
